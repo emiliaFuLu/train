@@ -10,7 +10,6 @@
     <description>train</description>
     <modules>
         <module>member</module>
-        <module>member</module>
     </modules>
 
     <properties>
