@@ -1,11 +1,13 @@
 package com.fl.member.config;
 
 
+import cn.hutool.core.util.RandomUtil;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.support.spring.PropertyPreFilters;
 import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
 import jakarta.servlet.http.HttpServletRequest;
+import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
@@ -15,6 +17,7 @@ import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.slf4j.MDC;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
@@ -51,6 +54,9 @@ public class LogAspect {
         HttpServletRequest request = attributes.getRequest();
         Signature signature = joinPoint.getSignature();
         String name = signature.getName();
+
+        // 自定义请求ID
+        MDC.put("LOG_ID",System.currentTimeMillis()+ RandomUtil.randomString(5));
 
         // 打印请求信息
         LOG.info("------------- 开始 -------------");
