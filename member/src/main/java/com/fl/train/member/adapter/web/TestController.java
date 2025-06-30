@@ -1,4 +1,4 @@
-package com.fl.train.member.interfaces;
+package com.fl.train.member.adapter.web;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
