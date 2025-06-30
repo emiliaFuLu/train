@@ -18,6 +18,6 @@ public class GatewayApplication {
 
     public static void main(String[] args) {
         ConfigurableEnvironment env = SpringApplication.run(GatewayApplication.class, args).getEnvironment();
-        logger.info("member start success，\"http://localhost:{}{}/hello\"", env.getProperty("server.port"), env.getProperty("server.servlet.context-path"));
+        logger.info("gateway start success", env.getProperty("server.port"));
     }
 }
