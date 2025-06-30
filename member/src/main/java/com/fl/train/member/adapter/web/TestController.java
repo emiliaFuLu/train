@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author <a href="mailto:fulurjj@gmail.com">FuLu</a >
  * @since 2025/1/15 23:44
  */
-@RestController()
+@RestController
 public class TestController {
 
 

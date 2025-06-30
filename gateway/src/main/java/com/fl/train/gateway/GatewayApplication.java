@@ -14,7 +14,7 @@ import org.springframework.core.env.ConfigurableEnvironment;
  */
 @SpringBootApplication
 public class GatewayApplication {
-    private static final Logger logger =  LoggerFactory.getLogger(GatewayApplication.class);
+    private static final Logger logger = LoggerFactory.getLogger(GatewayApplication.class);
 
     public static void main(String[] args) {
         ConfigurableEnvironment env = SpringApplication.run(GatewayApplication.class, args).getEnvironment();
