@@ -1,4 +1,4 @@
-package com.fl.member.config;
+package com.fl.train.common.config;
 
 
 import cn.hutool.core.util.RandomUtil;
@@ -7,7 +7,6 @@ import com.alibaba.fastjson.support.spring.PropertyPreFilters;
 import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
 import jakarta.servlet.http.HttpServletRequest;
-import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;

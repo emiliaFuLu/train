@@ -10,6 +10,7 @@
     <description>train</description>
     <modules>
         <module>member</module>
+        <module>common</module>
     </modules>
 
     <properties>
@@ -66,6 +67,12 @@
                 <version>${spring-boot.version}</version>
                 <scope>runtime</scope>
                 <optional>true</optional>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.fl</groupId>
+                <artifactId>common</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
             </dependency>
 
         </dependencies>
