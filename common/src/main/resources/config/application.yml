@@ -1,2 +1,9 @@
 server:
-  port: 8082
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/train_member?characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Seoul&useSSL=false&allowPublicKeyRetrieval=true
+    username: train_member
+    password: train_member
+    driver-class-name: com.mysql.cj.jdbc.Driver
