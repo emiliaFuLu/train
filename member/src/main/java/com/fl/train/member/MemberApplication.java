@@ -15,7 +15,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @SpringBootApplication(scanBasePackages = {"com.fl.train.member", "com.fl.train.common"})
 @EnableAspectJAutoProxy
 public class MemberApplication {
-    private static final Logger logger =  LoggerFactory.getLogger(MemberApplication.class);
+    private static final Logger logger = LoggerFactory.getLogger(MemberApplication.class);
 
     public static void main(String[] args) {
         SpringApplication.run(MemberApplication.class, args);
